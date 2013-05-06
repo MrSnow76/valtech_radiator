@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <div class="page">
+    <div class="header"><h1>{{headline}}</h1></div>
+    <div class="content">
+      <div><iframe scrolling=no id="iFrame" src={{{pageUrl}}} frameborder="0" allowfullscreen></iframe></div>
+    </div>
+    <div class="footer"> <a href="http://valtech.de">
+      <div class="footer-logo" align=right>
+      </div>
+      <h2 align=right>{{footer}}</h2>
+    </a></div>
+  </div>​
+<body>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="http://localhost:3000/public/stylesheets/style.css">
+    <script>
+      var index={{{currentIndex}}};
+      var urls=[{{{allUrls}}}];
+      setInterval(function(){
+        if(index > {{maxIndex}}){
+          index = 0;
+        }
+        document.getElementById('iFrame').src = urls[index];
+        index++;
+      },{{delay}});
+    </script>
+  </head>
+</body>
+</html>

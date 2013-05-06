@@ -1,0 +1,7 @@
+load:
+  - jasmine-lib/jasmine.js
+  - jasmine-lib/JasmineAdapter.js
+  - lib/Greeter.js
+
+test:
+  - test/Greeter.Test.js
