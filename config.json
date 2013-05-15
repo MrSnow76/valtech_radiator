@@ -1,0 +1,12 @@
+{
+  "currentPage": "1",
+  "maxPageIndex": "4",
+  "pageShowDelay": "3000",
+  "title": "Valtech Radiator",
+  "header": "My Information Radiator Header",
+  "page0": "http://agilemanifesto.org/",
+  "page1": "http://valtech.de",
+  "page2": "http://nodejs.org/",
+  "page3": "http://docs.busterjs.org/en/latest/",
+  "page4": "http://www.wikipedia.org/"
+}
